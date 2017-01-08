@@ -4,7 +4,7 @@ function saveRatings(text) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    var link = document.getElementById('link');
+    var link = document.getElementById('saveStuff');
     // onClick's logic below:
     link.addEventListener('click', function() {
         saveRatings('xxx');
