@@ -7,10 +7,12 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <title>Getting Started Extension's Popup</title>
     <style>
         body {
@@ -37,6 +39,7 @@
             overflow: hidden;
             max-width: 400px;
         }
+        
     </style>
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
@@ -44,35 +47,25 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    
 </head>
 
 <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <h4>Safe-Sight</h4>
     <h5>Toxicity Rating</h5>
-    
-    <div class="dropdown" style="padding-bottom: 5px;">
-        <button class="btn btn-sm dropdown-toggle" id="dropdownMenu" type="button" data-toggle="dropdown">1 <span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5</a></li>
-        </ul>
-    </div>
+    <form>
+    <div class="container">
+  <input type="checkbox" name="vehicle1" value="1" checked> 1
+  <input type="checkbox" name="vehicle2" value="2"> 2
+        <input type="checkbox" name="vehicle2" value="2"> 2
+        </div>
+</form>
     <h5>Reason</h5>
-    <div class="dropdown" style="padding-bottom: 10px;">
-        <button class="btn btn-sm dropdown-toggle" id="dropdownMenu" type="button" data-toggle="dropdown">Homophobia <span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Racist</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sexual Violence</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Threatening</a></li>
-        </ul>
-    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="usr"> </div>
     <button id='beginConvert'>Submit</button>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="popup.js"></script>
+    
 </body>
 
 </html>
