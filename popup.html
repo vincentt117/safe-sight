@@ -7,11 +7,14 @@
  -->
 <html>
   <head>
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title>Getting Started Extension's Popup</title>
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
+        min-width:200px;
+        min-height: 200px;
       }
       #status {
         /* avoid an excessively wide status text */
@@ -34,6 +37,6 @@
     <div class="plus" id="status"></div>
     <script src="inline.js"></script>
     <img id="image-result" hidden>
-   <button id='beginConvert'>Convert</button>
+   <button id='beginConvert'>Submit</button>
   </body>
 </html>
