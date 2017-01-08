@@ -4,4 +4,4 @@ function popup(e) {
 }
 
 var plusBtn = document.querySelector('.plus');
-plusBtn.addEventListener('click', popup); )
+plusBtn.addEventListener('click', popup); 
