@@ -24,7 +24,8 @@
             border-style: solid;
             border-width: 10px;
             background-color: #5F5F5F;
-            padding: 20px;
+            padding: 13px;
+            padding-top:3px;
             color: #FFFFFF;
         }
         
@@ -39,7 +40,6 @@
             overflow: hidden;
             max-width: 400px;
         }
-        
     </style>
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
@@ -51,21 +51,21 @@
 
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <h4>Safe-Sight</h4>
+    <h4 style="padding-bottom:7px;">Safe-Sight</h4>
     <h5>Toxicity Rating</h5>
-    <form>
-    <div class="container">
-  <input type="checkbox" name="vehicle1" value="1" checked> 1
-  <input type="checkbox" name="vehicle2" value="2"> 2
-        <input type="checkbox" name="vehicle2" value="2"> 2
-        </div>
-</form>
+    <form style="padding-bottom:5px;">
+        <div class="container">
+            <input type="radio" name="rating" value="1"> 1
+            <input type="radio" name="rating" value="2"> 2
+            <input type="radio" name="rating" value="3"> 3
+            <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5</div>
+    </form>
     <h5>Reason</h5>
     <div class="form-group">
         <input type="text" class="form-control" id="usr"> </div>
     <button id='saveStuff'>Submit</button>
     <script src="popup.js"></script>
-    
 </body>
 
 </html>
