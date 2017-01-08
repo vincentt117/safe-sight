@@ -1,7 +1,13 @@
-function popup(e) {
-  var link = document.URL;
-  alert("This is the Link : ( " +link+ " )");
+function saveRatings(text) {
+  alert(text);
 }
 
-var plusBtn = document.querySelector('.plus');
-plusBtn.addEventListener('click', popup); 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById('link');
+    // onClick's logic below:
+    link.addEventListener('click', function() {
+        saveRatings('xxx');
+    });
+});
+
