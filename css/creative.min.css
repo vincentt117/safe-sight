@@ -32,7 +32,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url(../img/clouds.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0)), url("../img/clouds.jpg");
     color: #fff;
     background-attachment: fixed
 }
@@ -76,6 +76,7 @@ p {
 }
 
 .bg-primary {
+    min-height: 100%;
 }
 
 .bg-dark {
@@ -88,7 +89,7 @@ p {
 }
 
 section {
-    padding: 100px 0
+    padding:200px 0
 }
 
 aside {
@@ -100,7 +101,7 @@ aside {
 }
 
 .navbar-default {
-    background-color: #fff;
+    background-color: transparent;
     border-color: rgba(34, 34, 34, .05);
     transition: all .35s
 }
